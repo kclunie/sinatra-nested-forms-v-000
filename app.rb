@@ -4,6 +4,20 @@ module FormsLab
   class App < Sinatra::Base
 
     # code other routes/actions here
+    
+      get '/' do
+    erb :index
+  end
+
+  get '/new' do
+    erb :new
+  end
+
+  post '/pirates' do
+   # @puppy = Puppy.new(params[:name], params[:breed], params[:months_old])
+    erb :show
+  end
+    
 
   end
 end
